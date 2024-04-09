@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Coffee Shop</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Coffee Shop: About Us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About</li>
+                 </ol>
+                 <h2>About Us</h2>
+               <hr />
+            </div>
+        </div>
+
+        <!-- reserve table modal -->
+        <div class="modal" id="reserveTableModal">
+            <div class="modal-diaog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Reserve a Table</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form id="reserveTableForm" action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+                                <div class="row mb-3">
+                                    <div class="col-sm-6 col-xs col-form-label">
+                                        <label for="numberofpeople">Number Of People</label>
+                                    </div>
+                                    <div class="col-sm-6 col-xs">
+                                        <select name="numberofpeople" class="form-control" id="numberofpeople">
+                                            <option value="select">Select</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-6 col-form-label">
+                                        <label for="date">Date</label>
+                                    </div>
+                                    <div class="col-sm-6 ">
+                                        <input type="date" class="form-control" id="date" name="date" placeholder="mm/dd/yyyy">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <button class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                                        <button class="btn btn-info" type="submit">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- History and Goals Section -->
+        <section class="row row-content">
+            <div class="col-xs-12 col-sm-4 md-3 align-content-center">
+                <h3>Our History</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iure enim at illum commodi quasi sit, 
+                    veritatis culpa accusantium eveniet nam voluptates reprehenderit harum sint veniam sunt hic a quibusdam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe asperiores repellendus alias nihil ipsa 
+                    aspernatur earum soluta quasi aliquid odio perspiciatis dolor esse rem laudantium, sed voluptates? Sequi, 
+                    in eius.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 align-content-center">
+                <img class="me-3 mb-5 img-thumbnail" src="img/coffee-two.jpg" alt="coffee with friends">
+            </div>
+            <div class="col-xs-12 col-sm-4 align-content-center">
+                <h3>Our Goals</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quam maiores quas sit sunt architecto, 
+                    possimus at, officia minima itaque assumenda expedita illum similique atque ab saepe esse dolorem nulla!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut ipsum quisquam atque nulla. Dolor excepturi 
+                    voluptatibus quam eum culpa suscipit sapiente vel aperiam minima impedit, porro iure possimus vero?</p>
+            </div>
+        </section>
+
+        <section class="row row-content align-items-center">
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="card">
+                    <h3 class="card-header bg-dark text-white">Facts at Coffee Shop</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Founded</dt>
+                            <dd class="col-6">June 6, 2018</dd>
+                            <dt class="col-6">Employees</dt>
+                            <dd class="col-6">16</dd>
+                            <dt class="col-6">Google Review</dt>
+                            <dd class="col-6">4.9 out of 5</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <img class="me-3 img-thumbnail" src="img/coffee-one.jpg" alt="Lattee coffee">
+                    </div>
+                    <div class="col col-xs-12">
+                        <h3>Come to Join Us!</h3>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#reserveTableModal">Reserve Table</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

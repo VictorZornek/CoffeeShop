@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Coffee Shop</title>
+    
+
+</head>
+<body>
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Coffee Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+         <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/coffee-five.jpg" class="d-block w-100" style="height: 600px;" alt="Coffee 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Experience the Perfect Taste</h5>
+                    <p>Indulge in our rich, flavorful coffee that will tantalize your taste buds.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/coffee-four.jpg" class="d-block w-100" style="height:600px;" alt="Coffee 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Great Coffee at Affordable Prices</h5>
+                    <p>Enjoy our amazing coffee without breaking the bank. Quality doesn't have to be expensive!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/coffee-three.jpg" class="d-block w-100" style="height: 600px;" alt="Coffee 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Stay Connected with Free WiFi</h5>
+                    <p>Relax and surf the web while sipping your favorite coffee with our complimentary WiFi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+       </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+<!-- Container Section -->
+    <div class="container mt-4">
+        <h2>Welcome to Our Coffee Shop</h2>
+        <p>"Awaken your senses with our exquisite selection of specialty coffees at our welcoming coffee shop.</p>
+    </div>
+<!-- Finest Coffee Section -->
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Discover Our Finest Coffee</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/img/coffee-logo.png" class="img-fluid" alt="Coffee 3">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    At Coffee Shop, we take pride in serving the finest coffee sourced from around the world. 
+                    Each cup is carefully crafted to deliver an exceptional taste experience, ensuring that every 
+                    sip is a moment of pure delight.
+                </p>
+                <p>
+                    From rich and robust espresso to creamy and flavorful cappuccino, our menu offers a variety 
+                    of coffee options to suit every palate. Join us today and indulge in the true essence of coffee.
+                </p>
+                <a href="menu.html" class="btn btn-primary">View Menu</a>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <!-- Menu Table -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Espresso</td>
+                            <td>Dive into the bold and intense flavors of our meticulously crafted espresso. 
+                                Served piping hot, this small yet powerful shot of rich coffee is a genuine delight for coffee enthusiasts.
+                                Experience the harmonious balance of aroma, body, and crema in every sip! ☕ ☕︎
+                            </td>
+                            <td>$2.99</td>
+                        </tr>
+                        <tr>
+                            <td>Cappuccino</td>
+                            <td>Embark on a journey through a world of refined flavors with our signature cappuccino.
+                                This luxuriously smooth blend of espresso, steamed milk, and thick milk foam serves as a canvas for your taste buds. </td>
+                            <td>$3.99</td>
+                        </tr>
+                        <tr>
+                            <td>Americano</td>
+                            <td>Encounter the essence of simplicity with our Americano! Crafted by a diluting a shot of espresso with hot water, this coffee presents
+                                a smooth and mellow flavor profile! Immerse yourself in the pure essence of coffee with every sip, allowing its subtle nuances to
+                                awaken your senses!
+                            </td>
+                            <td>$2.49</td>
+                        </tr>
+                        <tr>
+                            <td>Latte</td>
+                            <td>Delight in creamy perfection with our classic latte! A harmonious fusion of espresso and steamed milk creates a velvety-smooth texture that 
+                                is simply irresistable. Whether enjoyed plain or with a drizzle of caramel or chocolate, our lattes promise to delight your palate!
+                            </td>
+                            <td>$4.99</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Tea</td>
+                            <td>Quench your thirst with our refreshing ice teas! Explore a variety of flavors including classic black tea, bubble tea, fruity herbal blends, and zesty
+                                green tea! Served over ice with a touch of sweetness, our ice teas offer a cooling and hydrating escape! 🍵.
+                            </td>
+                            <td>$4.99</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript Coffee ☕︎ (Limited Edition)</td>
+                            <td>Embark on a flavorful journey infused with the essence of programming in our JavaScript Coffee. This unique blend marries the robust notes of espresso with a subtle hint of coding inspiration. 
+                                Served alongside a dose of creativity and ingenuity, it's the perfect companion for coding sessions, brainstorming endeavors, or moments of contemplation about the digital universe. ☕︎
+                            </td>
+                            <td>$3.79</td>
+                        </tr>
+                        <!-- Coffee etc. -->
+                    </tbody>
+                </table>
+    <!--Reservation Form Area-->
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dateInput" class="form-label">Reservation Date</label>
+                        <input type="date" class="form-control" id="dateInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="timeInput" class="form-label">Reservation Time</label>
+                        <input type="time" class="form-control" id="timeInput">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Reservation</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--Footer-->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Coffee</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="bi bi-facebook fs-3 me-3"><i></a>
+            <a href="https://www.youtube.com"><i class="bi bi-facebook fs-3 me-3"><i></a>
+            <a href="https://www.twitter.com"><i class="bi bi-facebook fs-3 me-3"><i></a>
+            <a href="https://www.instagram.com"><i class="bi bi-facebook fs-3 me-3"><i></a>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

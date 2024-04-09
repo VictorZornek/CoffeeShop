@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Menu - Coffee Shop</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Coffee Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Table -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="/img/coffee-five.jpg" alt="Espresso Image" width="100px" height="100px">
+                                Espresso
+                            </td>
+                            <td>Dive into the bold and intense flavors of our meticulously crafted espresso. 
+                                Served piping hot, this small yet powerful shot of rich coffee is a genuine delight for coffee enthusiasts.
+                                Experience the harmonious balance of aroma, body, and crema in every sip! ☕ ☕︎
+                            </td>
+                            <td>$2.99</td>
+                        </tr>  
+                        <tr>
+                            <td>
+                                <img src="/img/coffee-four.jpg" alt="Cappuccino Image" width="100px" height="100px">
+                                Cappuccino
+                            </td>
+                            <td>Embark on a journey through a world of refined flavors with our signature cappuccino.
+                                This luxuriously smooth blend of espresso, steamed milk, and thick milk foam serves as a canvas for your taste buds.
+                            </td>
+                            <td>$3.99</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="/img/coffee-three.jpg" alt="Americano Image" width="100px" height="100px">
+                                Americano
+                            <td>Encounter the essence of simplicity with our Americano! Crafted by a diluting a shot of espresso with hot water, this coffee presents
+                                a smooth and mellow flavor profile! Immerse yourself in the pure essence of coffee with every sip, allowing its subtle nuances to
+                                awaken your senses!
+                            </td>
+                            <td>$2.49</td>
+                        </tr>
+                        <tr>
+                            <td>Latte</td>
+                            <td>Delight in creamy perfection with our classic latte! A harmonious fusion of espresso and steamed milk creates a velvety-smooth texture that 
+                                is simply irresistable. Whether enjoyed plain or with a drizzle of caramel or chocolate, our lattes promise to delight your palate!
+                            </td>
+                            <td>$4.99</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Tea</td>
+                            <td>Quench your thirst with our refreshing ice teas! Explore a variety of flavors including classic black tea, bubble tea, fruity herbal blends, and zesty
+                                green tea! Served over ice with a touch of sweetness, our ice teas offer a cooling and hydrating escape! 🍵.
+                            </td>
+                            <td>$4.99</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript Coffee ☕︎ (Limited Edition)</td>
+                            <td>Embark on a flavorful journey infused with the essence of programming in our JavaScript Coffee. This unique blend marries the robust notes of espresso with a subtle hint of coding inspiration. 
+                                Served alongside a dose of creativity and ingenuity, it's the perfect companion for coding sessions, brainstorming endeavors, or moments of contemplation about the digital universe. ☕︎
+                            </td>
+                            <td>$3.79</td>
+                        </tr>
+
+    <!-- Coffee etc. -->
+
+                    </tbody>
+                </table>
+
+    <!--Reservation Form Area-->
+
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dateInput" class="form-label">Reservation Date</label>
+                        <input type="date" class="form-control" id="dateInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="timeInput" class="form-label">Reservation Time</label>
+                        <input type="time" class="form-control" id="timeInput">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Reservation</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Coffee Shop</p>
+        <div>
+            <a href="https://www.facebook.com/CoffeeHumor/"><i class="bi bi-facebook fs-3 me-3"></i></a>
+            <a href="https://twitter.com/JavaScript"><i class="bi bi-twitter fs-3 me-3"></i></a>
+            <a href="https://www.instagram.com/coffee/"><i class="bi bi-instagram fs-3"></i></a>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.coffee-icon {
+    max-width: 50px; 
+    height: auto !important;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.modal-header {
+    background-color: #343a40;
+    color:white;
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+footer {
+    margin-top: 50px;
+}
